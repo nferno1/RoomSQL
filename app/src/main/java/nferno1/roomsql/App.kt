@@ -19,6 +19,7 @@ class App: Application() {
             AppDatabase::class.java
 
         )
+            .addMigrations(MIGRATION_1_2)
             .fallbackToDestructiveMigration() // для уничтожения и перезагрузки бд заново
             .build()
     }

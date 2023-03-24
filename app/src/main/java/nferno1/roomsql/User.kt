@@ -15,6 +15,8 @@ data class User(
     @ColumnInfo(name = "last_name")
     val lastName: String,
     @ColumnInfo(name = "age")
-    val age: Int
+    val age: Int,
+    @ColumnInfo(name = "birthday")
+    val birthday: String?
 
 )

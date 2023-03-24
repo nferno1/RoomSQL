@@ -10,5 +10,16 @@ data class UserWithAddress(
         parentColumn = "id",
         entityColumn = "user_id"
     )
-    val address: Address?
+    val address: Address?,
+@Relation(
+    entity = PlayList::class,
+    parentColumn = "id",
+    entityColumn = "user_id"
 )
+val playList: List<PlayListWithSongs>?
+)
+
+
+
+
+
